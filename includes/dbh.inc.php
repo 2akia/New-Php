@@ -1,16 +1,19 @@
+
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
 $serverName = "localhost";
-$sBUsername = "root";
-$dBPassword = "";
+$dBUsername = "root"; 
+$dBPassword = "root";
 $dBName = "phpproject01";
 
 
-$conn = mysqli_connect($serverName, $sBUsername, $dBPassword, $dBName);
+$conn = mysqli_connect($serverName, $dBUsername, $dBPassword, $dBName);
 
 
-if(!$conn) { 
+if (!$conn) {
     die("Connection Failed: " . mysqli_connect_error());
-    
 }
-
+?>
