@@ -9,9 +9,12 @@ include_once 'header.php';
 <?php
 
 if (isset($_SESSION["useruid"])) {
-echo "<p>Hello there ".  htmlspecialchars ($_SESSION["useruid"]) ."!</p>";
+echo "<p>Hello ".  htmlspecialchars ($_SESSION["useruid"]) ."!</p>";
 }
 
+if (isset($_GET['message']) && $_GET['message'] === 'loggedout') {
+    echo "<p> You have successfully logged out!</p>";
+}
 
 ?>
 
