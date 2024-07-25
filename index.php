@@ -5,7 +5,18 @@ include_once 'header.php';
 
 
 <section class="index-intro">
-    <h1>This is an Introduction</h1>
+
+<?php
+
+if (isset($_SESSION["useruid"])) {
+echo "<p>Hello there ".  htmlspecialchars ($_SESSION["useruid"]) ."!</p>";
+}
+
+
+?>
+
+    <h1>This is the Website</h1>
+    <p>This is the Introduction</p>
     <p>This is a Paragraph</p>
 </section>
 

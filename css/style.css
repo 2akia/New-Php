@@ -33,9 +33,10 @@ h1 {
 
 
 nav {
-    background: #333;
+    background: #196d87;
     color: #fff;
-    padding: 10px 0;
+    font-size: 20px;
+    padding: 30px 0;
 }
 
 nav .wrapper {
@@ -61,7 +62,7 @@ nav ul li {
 }
 
 nav ul li a:hover {
-    background: #555;
+    background: #ffffff;
     padding: 5px 10px;
     border-radius: 5px;
 }
