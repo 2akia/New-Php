@@ -20,7 +20,7 @@ include_once 'header.php';
    <input type="password" name="pwd" placeholder="Password"><br>
    <input type="password" name="pwdrepeat" placeholder="Repeat Password..."><br>
 
-   <button type="submit" name="submit">Signup</button>
+   <br><button type="submit" name="submit">Signup</button>
 
    </form>
    </div>
